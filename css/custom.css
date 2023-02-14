@@ -1,0 +1,24 @@
+.privacy-link {
+    margin-left: -50px;
+    float: left;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    /* Hide the element on mobile devices */
+    .privacy-link {
+      display: none;
+    }
+  }
+
+  .plink {
+    display: none;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    /* Show the element on mobile devices */
+    .plink {
+      display: block;
+    }
+  }
