@@ -143,16 +143,58 @@
 													</li>
 													
 												</ul>
+												
 											</nav>
+											
 										</div>
+										
 										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>
 										</button>
+
 									</div>
+									
 								</div>
+								
 							</div>
+							
 						</div>
+						
 					</div>
+					<div class="header-links" style="height: 30px; font-weight: 500; background-color: #e6e6e6; padding-top: 2px;  width: 100%; text-align: center;">
+													<ul style="list-style: none; padding: 0;">
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#careers">
+																Careers
+															</a>
+														</li>
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#culture">
+																Culture
+															</a>
+														</li>
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#roles">
+																Roles
+															</a>
+														</li>
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#benefits">
+																Benefits
+															</a>
+														</li>
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#awards">
+																Awards
+															</a>
+														</li>
+														<li style="display: inline-block; margin-right: 20px;">
+															<a class="nav-link" href="#internships">
+																Internships
+															</a>
+														</li>
+													</ul>
+												</div>
 				</div>
 			</header>
 
@@ -174,7 +216,8 @@
                     </div>
                 </section>
 
-				<!-- Add the following new div for the links with a gray background -->
+<!-- <div class="header-container">
+				
 <div class="header-links" style="background-color: #e6e6e6; padding-top: 20px; font-size: 20px; padding-bottom: 10px; width: 100%; text-align: center;">
     <ul style="list-style: none; padding: 0;">
         <li style="display: inline-block; margin-right: 20px;">
@@ -209,7 +252,8 @@
         </li>
     </ul>
 </div>
-<!-- End of new links div -->
+</div> -->
+
 
 
                 <section id="careers" class="section section-height-3 bg-color-transparent border-0 pb-0 m-0" style="background-image: url(img/backgrounds/dots-background-3.png); background-repeat: no-repeat; background-position: 112% 100%;">
@@ -246,16 +290,10 @@
                             <div class="overflow-hidden mb-2">
                                 <span class="d-block font-weight-bold custom-text-color-grey-1 text-center line-height-1 mb-0  " data-="maskUp" data--delay="300" style="animation-delay: 300ms;">WHY CLOUDFIT?</span>
                             </div>
-							<div class="text-center">
-								<p class="custom-text-size-2 pb-1 mb-3">
-									<a href="https://cloudfitsoftware.com/aboutus.html#serve" target="_blank">
-										<button style="margin-top: 20px; padding: 10px; background-color: #2a3f8d; color: white; border: 0;">CloudFit Culture</button>
-									</a>
-								</p>
-							</div>
 							
                             <div class="overflow-hidden mb-5">
                                 <h2 class="text-color-dark font-weight-bold text-center text-8 line-height-2 mb-0   " data-="maskUp" data--delay="500" style="animation-delay: 500ms;">Hear from CloudFitters</h2>
+								<h3 class="text-color-dark pt-3 text-center text-5 line-height-2 mb-0   " data-="maskUp" data--delay="500" style="animation-delay: 500ms;"><a href="https://cloudfitsoftware.com/aboutus.html#serve" target="_blank">Learn More</a></h3>
                             </div>
                         </div>
                     </div>
@@ -336,7 +374,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapse11One" class="collapse" style="">
+                                        <div id="collapse11One" class="collapse">
                                             <div class="card-body px-4 pt-2 pb-3">
                                                 <p class="custom-text-size-1 pb-1 mb-2">"At CloudFit, the Personal Trainer (PT) is an extension of senior leadership and is the face of the company with the customer. The CloudFit PT is a unique position because they need to understand Program and Project Management tenets, but they also must possess a high degree of technical skills as well."</p>
                                                 
@@ -356,7 +394,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapse11Two" class="collapse" style="">
+                                        <div id="collapse11Two" class="collapse">
                                             <div class="card-body px-4 pt-2 pb-3">
                                                 <p class="custom-text-size-1 pb-1 mb-2">"Service Engineers main objectives include three-steps. The initial guided setup and installation, ensure programs are all working together properly, and assistance with resolving ongoing issues. This job entails configuration, modification, and communication of existing or new programs that properly meet the needs of the customer and team."</p>
                                                 
@@ -711,6 +749,22 @@
 			</footer>
 
 		</div>
+
+		<script>
+
+window.addEventListener('scroll', function () {
+        var header = document.querySelector('.header-links');
+        var container = document.querySelector('.header-container');
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > container.offsetHeight) {
+            header.classList.add('fixed-header');
+        } else {
+            header.classList.remove('fixed-header');
+        }
+    });
+
+		</script>
 
 		<!-- Vendor -->
 		<script src="vendor/plugins/js/plugins.min.js"></script>
