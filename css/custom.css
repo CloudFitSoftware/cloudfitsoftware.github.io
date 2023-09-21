@@ -21,3 +21,19 @@
       display: block;
     }
   }
+
+  .hidden {
+    display: none;
+}
+
+.image-container {
+  padding-left: 100px;
+  float: left;
+  clear: left;
+  width: 100%; /* Ensure each container takes up the full width to stack vertically */
+  margin-bottom: 10px; /* Adjust this value to control the vertical spacing between images */
+}
+
+.inner-container {
+  float: left; /* Float the inner containers left */
+}
