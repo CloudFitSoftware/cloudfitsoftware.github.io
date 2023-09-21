@@ -657,22 +657,36 @@
 		</div>
 
 		<script>
-		        function toggleDiv(divId) {
-            for (let i = 1; i <= 4; i++) {
-                const div = document.getElementById(`div${i}`);
-                if (div) {
-                    if (i === divId) {
-                        div.style.display = 'block'; // Show the selected div
-                    } else {
-                        div.style.display = 'none'; // Hide other divs
-                    }
-                }
+	// Add click event listeners to all image elements
+const images = document.querySelectorAll('.inner-container img');
+images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+        toggleDiv(index + 1);
+        // Remove the visual effect from all images
+        images.forEach(img => img.classList.remove('clicked'));
+        // Add the visual effect to the clicked image
+        image.classList.add('clicked');
+    });
+});
+
+function toggleDiv(divId) {
+    for (let i = 1; i <= 5; i++) {
+        const div = document.getElementById(`div${i}`);
+        if (div) {
+            if (i === divId) {
+                div.style.display = 'block'; // Show the selected div
+            } else {
+                div.style.display = 'none'; // Hide other divs
             }
         }
+    }
+}
 
-        // Initially, show the first div (div1) by default
-        toggleDiv(1);
-			
+// Initially, show the first div (div1) and apply the visual effect to the first image by default
+toggleDiv(1);
+images[0].classList.add('clicked');
+
+
 
 window.addEventListener('scroll', function () {
         var header = document.querySelector('.header-links');

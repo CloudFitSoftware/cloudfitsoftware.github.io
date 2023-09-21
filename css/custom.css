@@ -25,6 +25,10 @@
   .hidden {
     display: none;
 }
+.clicked {
+  border: 2px solid #5974ec; /* You can adjust the border style as needed */
+  /* You can also add other styling as desired, such as focus effects */
+}
 
 .image-container {
   padding-left: 100px;
@@ -37,3 +41,4 @@
 .inner-container {
   float: left; /* Float the inner containers left */
 }
+
