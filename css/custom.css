@@ -32,13 +32,24 @@
 
 .image-container {
   padding-left: 100px;
-  float: left;
   clear: left;
   width: 100%; /* Ensure each container takes up the full width to stack vertically */
   margin-bottom: 10px; /* Adjust this value to control the vertical spacing between images */
+
 }
 
 .inner-container {
-  float: left; /* Float the inner containers left */
+ padding: 12px;
+  background-color: #ffffff; /* Set your desired background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: inline-block;
+  margin-right: 10px; 
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 

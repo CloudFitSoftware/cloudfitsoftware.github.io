@@ -363,33 +363,38 @@
 								
 								<p class="custom-text-size-2 pb-1 mb-3">CloudFit’s technical professions are as unique as the team members that fill them! Not sure what a CloudFit Personal Trainer does? Wondering if your software development skills are a match or what a day in the life of a Command & Control Engineer looks like? We’ve got you covered.  Check out these self-made videos where real CloudFitters share what they do and what they love about their roles at CloudFit to help you find your fit!</p>
 								
-								<div class="image-container">
+							<div class="center">
 									<div class="inner-container">
 										<img onclick="toggleDiv(1)" src="./img/careers/lucas.jpg" alt="Show Div 1">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Command & <br> Control Engineer</p>
+									
 									</div>
-								</div>
+			
 								
-								<div class="image-container">
+						
 									<div class="inner-container">
 										<img onclick="toggleDiv(2)" src="./img/careers/herrick.jpg" alt="Show Div 2">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Site Reliability <br> Engineer</p>
 									</div>
-								</div>
+				
 								
-								<div class="image-container">
+							
 									<div class="inner-container">
 										<img onclick="toggleDiv(3)" src="./img/careers/juan.jpg" alt="Show Div 3">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Program <br> Manager</p>
 									</div>
-								</div>
-								
-								<div class="image-container">
+					
+							
 									<div class="inner-container">
 										<img onclick="toggleDiv(4)" src="./img/careers/bryce.jpg" alt="Show Div 4">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Service <br> Manager</p>
 									</div>
-								</div>
+						
 								
-								<div class="image-container">
+				
 									<div class="inner-container">
 										<img onclick="toggleDiv(5)" src="./img/careers/p.jpg" alt="Show Div 5">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Service <br> Engineer</p>
 									</div>
 								</div>
 								
@@ -658,7 +663,7 @@
 
 		<script>
 	// Add click event listeners to all image elements
-const images = document.querySelectorAll('.inner-container img');
+const images = document.querySelectorAll('.inner-container');
 images.forEach((image, index) => {
     image.addEventListener('click', () => {
         toggleDiv(index + 1);
