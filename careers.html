@@ -396,6 +396,10 @@
 										<img onclick="toggleDiv(5)" src="./img/careers/p.jpg" alt="Show Div 5">
 										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Service <br> Engineer</p>
 									</div>
+									<div class="inner-container">
+										<img onclick="toggleDiv(6)" src="./img/careers/ju.jpg" alt="Show Div 6">
+										<p style="margin: 0px; padding-top: 5px; font-size: 12px; line-height: 15px;">Personal <br> Trainer</p>
+									</div>
 								</div>
 								
 							
@@ -424,6 +428,11 @@
 								<div style="padding-top: 10px; margin: 0 auto;" class="hidden col-md-5 col-lg-4 ms-xl-auto" id="div5">
 									<div style="margin-bottom: 20px;" class="img-fluid position-relative z-index-1">
 										<script src=https://fast.wistia.com/embed/medias/wawkid60g2.jsonp async></script><script src=https://fast.wistia.com/assets/external/E-v1.js async></script><div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_wawkid60g2 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src=https://fast.wistia.com/embed/medias/wawkid60g2/swatch style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+									</div>
+								</div>
+								<div style="padding-top: 10px; margin: 0 auto;" class="hidden col-md-5 col-lg-4 ms-xl-auto" id="div6">
+									<div style="margin-bottom: 20px;" class="img-fluid position-relative z-index-1">
+										<script src=https://fast.wistia.com/embed/medias/8ojbepbur5.jsonp async></script><script src=https://fast.wistia.com/assets/external/E-v1.js async></script><div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_8ojbepbur5 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src=https://fast.wistia.com/embed/medias/8ojbepbur5/swatch style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div></div></div></div></div>
 									</div>
 								</div>
                         </div>
@@ -465,7 +474,8 @@
 										<img class="img-fluid pb-2 mb-4" style="width: 200px" src="img/health.jpg" alt="Health Benefits Image">
 										<h4 class="font-weight-bold text-color-dark text-6 pb-1 mb-1">Health</h4>
 										<ul style="margin-left: -20px;">
-											<li>CloudFit pays 100% of the premium for medical, dental, and vision.</li>
+											<li>CloudFit contributes over 90% of the premium for medical</li>
+											<li>CloudFit covers 100% dental & vision with buy up options</li>
 											<li>Through our medical plan, employees have access to Ginger, Talk Space, & many other leading mental health providers.</li>
 											<li>CloudFit also offers voluntary heath plans such as hospital, illness, and accident coverage.</li>
 											<li>Pet insurance.</li>
@@ -696,7 +706,7 @@ images.forEach((image, index) => {
 });
 
 function toggleDiv(divId) {
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         const div = document.getElementById(`div${i}`);
         if (div) {
             if (i === divId) {
