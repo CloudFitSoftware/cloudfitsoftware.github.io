@@ -141,12 +141,18 @@
                 width: -webkit-fill-available;
             }
         }
+
+        #footer {
+            width: 100%;
+            position: relative;
+            margin-top: auto;
+        }
+
     </style>
 </head>
 
-<body>
-
-    <div class="body">
+<body style="position: relative;">
+    <div class="body" style="position: relative;">
         <header id="header" class="header-effect-shrink"
             data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 90}">
             <div class="header-body border-top-0 box-shadow-none">
@@ -228,59 +234,59 @@
                 </div>
             </div>
         </header>
-        <section class="section custom-section-full-width bg-color-transparent border-0 mt-0 mb-0"
-            style="background-image: url(img/demos/it-services/backgrounds/dots-background-4.png); background-repeat: no-repeat; background-position: top right;">
-            <img src="./img/bldng2.jpg" style="height: 25vw; display: block; margin: 0 auto; padding-bottom:15px">
-            <div class="container container-xl-custom pt-1 mt-1">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="description">
-                            <h1 class="description__heading" data-test-description-heading style="text-align: center;">
-                                Careers at CloudFit Software
-                            </h1>
-                            <p class="description__text" data-test-description-text>
-                                CloudFit exists to plug gaps and connect dots for clients, enabling them to move quickly
-                                and run effectively in the Cloud. Our mission is to improve the lives of our customers
-                                and team members by providing selfless, accountable human and technology services that
-                                simplify the complex digital world.
-                            </p>
-                            <p class="description__text" data-test-description-text>
-                                Interested in joining the CloudFit family, but don't see any current openings that are a
-                                good match? Email your resume to careers@cloudfitsoftware.com to be considered for
-                                future opportunities. </p>
-                            </p>
-                        </div>
-                        <div class="container mx-auto" style="text-align: center; display: grid;">
-                            <table class="min-w-full bg-white shadow-md rounded my-6">
-                                <thead>
-                                    <tr style="text-align: center;">
-                                        <th class="text-center px-4 uppercase font-semibold text-sm border-b">JOB TITLE
-                                        </th>
-                                        <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
-                                            FUNCTION</th>
-                                        <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
-                                            LOCATION</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Copy for new jobs -->
-                                    <!-- <tr class="hover-row clickable-row" onclick="window.location='PAGE_URL';">
-                                        <td class="text-left py-3 px-4">Service Engineer</td>
-                                        <td class="text-left py-3 px-4">Engineering</td>
-                                        <td class="text-left py-3 px-4">Lynchburg, VA</td>
-                                    </tr> -->
-
-                                </tbody>
-                            </table>
-                                        <p class="text-center py-3 px-4" style="font-size: large;">No current openings</p>
+        <div style="background-image: url(img/bldng1.jpg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+            <section class="section custom-section-full-width bg-color-transparent border-0 mt-0 mb-0" style="padding: 120px 0;">
+                <div class="container container-xl-custom pt-1 mt-1">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10" style="background-color: white; padding: 20px; border-radius: 10px; opacity: 0.8;">
+                            <div class="description">
+                                <h1 class="description__heading" data-test-description-heading style="text-align: center;">
+                                    Careers at CloudFit Software
+                                </h1>
+                                <p class="description__text" data-test-description-text style="color: #000;">
+                                    CloudFit exists to plug gaps and connect dots for clients, enabling them to move quickly
+                                    and run effectively in the Cloud. Our mission is to improve the lives of our customers
+                                    and team members by providing selfless, accountable human and technology services that
+                                    simplify the complex digital world.
+                                </p>
+                                <p class="description__text" data-test-description-text style="color: #000;">
+                                    Interested in joining the CloudFit family, but don't see any current openings that are a
+                                    good match? Email your resume to careers@cloudfitsoftware.com to be considered for
+                                    future opportunities.
+                                </p>
+                            </div>
+                            <div class="container mx-auto" style="text-align: center; display: grid;">
+                                <table class="min-w-full bg-white shadow-md rounded my-6">
+                                    <thead>
+                                        <tr style="text-align: center;">
+                                            <th class="text-center px-4 uppercase font-semibold text-sm border-b">JOB
+                                                TITLE
+                                            </th>
+                                            <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
+                                                FUNCTION</th>
+                                            <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
+                                                LOCATION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Copy for new jobs -->
+                                        <!-- <tr class="hover-row clickable-row" onclick="window.location='PAGE_URL';">
+                                            <td class="text-left py-3 px-4">Service Engineer</td>
+                                            <td class="text-left py-3 px-4">Engineering</td>
+                                            <td class="text-left py-3 px-4">Lynchburg, VA</td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                                <p class="text-center py-3 px-4" style="font-size: large;">No current openings</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-    <footer id="footer" class="bg-color-primary border-0 mt-0"
-        style="width: -webkit-fill-available;">
+
+    <footer id="footer" class="bg-color-primary border-0" style="position: relative; bottom: 0;">
         <div class="footer-copyright bg-color-primary">
             <div class="container container-xl-custom">
                 <div class="row py-4 mt-2">
@@ -290,31 +296,23 @@
                         </a>
                     </div>
                     <div class="col-lg-6 text-center text-lg-end">
-                        <p class="privacy-link" style="margin-left: -80px; font-size: 16px;"><a
-                                href="privacy.html">Privacy Policy</a></p>
-                        <p class="plink" style="padding-bottom: 15px; font-size: 16px;"><a href="privacy.html">Privacy
-                                Policy</a></p>
+                        <p class="privacy-link" style="margin-left: -80px; font-size: 16px;"><a href="privacy.html">Privacy Policy</a></p>
+                        <p class="plink" style="padding-bottom: 15px; font-size: 16px;"><a href="privacy.html">Privacy Policy</a></p>
                         <ul class="social-icons social-icons-clean custom-social-icons-icon-light">
                             <li>
-                                <a style="margin-right: 20px" href="https://www.linkedin.com/company/cloudfitsoftware/"
-                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a style="margin-right: 20px" href="https://www.linkedin.com/company/cloudfitsoftware/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a style="margin-right: 20px" href="https://www.instagram.com/cloudfitsoftware/?hl=en"
-                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a style="margin-right: 20px" href="https://www.instagram.com/cloudfitsoftware/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a style="margin-right: 20px" href="https://twitter.com/CloudFitSW" target="_blank"><i
-                                        class="fab fa-twitter"></i></a>
+                                <a style="margin-right: 20px" href="https://twitter.com/CloudFitSW" target="_blank"><i class="fab fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a style="margin-right: 20px"
-                                    href="https://m.youtube.com/channel/UCQovbzEbXljBJxouWBRTxVQ" target="_blank"><i
-                                        class="fab fa-youtube"></i></a>
+                                <a style="margin-right: 20px" href="https://m.youtube.com/channel/UCQovbzEbXljBJxouWBRTxVQ" target="_blank"><i class="fab fa-youtube"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/CloudFitSoftware/"><i class="fab fa-facebook-f"
-                                        target="_blank"></i></a>
+                                <a href="https://www.facebook.com/CloudFitSoftware/"><i class="fab fa-facebook-f" target="_blank"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -322,7 +320,8 @@
             </div>
         </div>
     </footer>
-
+    
+    
     <script>
         // Add click event listeners to all image elements
         const images = document.querySelectorAll('.inner-container');
