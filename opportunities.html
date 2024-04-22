@@ -62,6 +62,23 @@
 
         gtag('config', 'UA-77901105-48');
     </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('showJobsContext', () => ({
+                showNoJobsText: true,
+                jobs: [],
+                init() {
+                    const self = this
+                    const result = fetch('jobs.json').then((json) => json.json()).then((results) => {
+                        self.jobs = results.Jobs
+                        self.showNoJobsText = results.Jobs.length === 0 ? true : false
+                    })}
+                }))
+            })
+    </script>
+
 
 
     <!-- Mobile Metas -->
@@ -255,29 +272,34 @@
                                     future opportunities.
                                 </p>
                             </div>
-                            <div class="container mx-auto" style="text-align: center; display: grid;">
-                                <table class="min-w-full bg-white shadow-md rounded my-6">
+                            <div class="container mx-auto" style="text-align: center; display: grid;" x-data="showJobsContext" >
+                                <table class="min-w-full bg-white shadow-md rounded my-6" >
                                     <thead>
                                         <tr style="text-align: center;">
-                                            <th class="text-center px-4 uppercase font-semibold text-sm border-b">JOB
-                                                TITLE
+                                            <th class="text-center px-4 uppercase font-semibold text-sm border-b">
+                                                JOB TITLE
                                             </th>
                                             <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
-                                                FUNCTION</th>
+                                                FUNCTION
+                                            </th>
                                             <th class="text-center py-3 px-4 uppercase font-semibold text-sm border-b">
-                                                LOCATION</th>
+                                                LOCATION
+                                            </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <!-- Copy for new jobs -->
-                                        <!-- <tr class="hover-row clickable-row" onclick="window.location='PAGE_URL';">
-                                            <td class="text-left py-3 px-4">Service Engineer</td>
-                                            <td class="text-left py-3 px-4">Engineering</td>
-                                            <td class="text-left py-3 px-4">Lynchburg, VA</td>
-                                        </tr> -->
+                                    <tbody x-show="!showNoJobsText">
+                                        <template x-for="job in jobs" :key="job.id">
+                                            <tr class="hover-row clickable-row" @click="window.location='PAGE_URL';">
+                                                <td class="text-left py-3 px-4" x-text="job.title"></td>
+                                                <td class="text-left py-3 px-4" x-text="job.category"></td>
+                                                <td class="text-left py-3 px-4" x-text="job.location"></td>
+                                            </tr>
+                                        </template>
                                     </tbody>
                                 </table>
-                                <p class="text-center py-3 px-4" style="font-size: large;">No current openings</p>
+                                <div x-show="showNoJobsText">
+                                    <p class="text-center py-3 px-4" style="font-size: large;">No current openings</p>
+                                </div>                            
                             </div>
                         </div>
                     </div>
