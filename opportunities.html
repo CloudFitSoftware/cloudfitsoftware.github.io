@@ -289,7 +289,7 @@
                                     </thead>
                                     <tbody x-show="!showNoJobsText">
                                         <template x-for="job in jobs" :key="job.id">
-                                            <tr class="hover-row clickable-row" @click="window.location='PAGE_URL';">
+                                            <tr class="hover-row clickable-row" @click="window.location=job.url;">
                                                 <td class="text-left py-3 px-4" x-text="job.title"></td>
                                                 <td class="text-left py-3 px-4" x-text="job.category"></td>
                                                 <td class="text-left py-3 px-4" x-text="job.location"></td>
@@ -308,7 +308,7 @@
         </div>
     </div>
 
-    <footer id="footer" class="bg-color-primary border-0" style="position: relative; bottom: 0;">
+    <footer id="footer" class="bg-color-primary border-0" style="position: relative; bottom: -21px;">
         <div class="footer-copyright bg-color-primary">
             <div class="container container-xl-custom">
                 <div class="row py-4 mt-2">
