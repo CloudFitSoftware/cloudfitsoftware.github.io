@@ -1,13 +1,6 @@
 {
     "Jobs": [
         {
-            "id": "Service Engineer",
-            "title":"Service Engineer",
-            "category":"Engineering",
-            "location":"Lynchburg, VA",
-            "url":"https://www.linkedin.com/jobs/view/3959939332"
-        },
-        {
             "id": "DevSecOps Service Engineer",
             "title":"DevSecOps Service Engineer",
             "category":"Engineering",
