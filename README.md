@@ -1,3 +1,7 @@
+# Deprecated Website Notice
+
+> This repository contains our **old website** and is now **deprecated**.
+
 # How to update the website!
 
 ## 1. Press the Period on your keyboard in this repo to open web editor... or clone it to our computer.
